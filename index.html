@@ -277,6 +277,147 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/01/搭建博客遇到的问题/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/07/01/搭建博客遇到的问题/" itemprop="url">
+                  搭建hexo博客遇到的问题
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2018-07-01 23:15:21 / Updated at: 23:24:57" itemprop="dateCreated datePublished" datetime="2018-07-01T23:15:21+08:00">2018-07-01</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p> &emsp;闲来无事，忽然想搭个博客，使用hexo搭建博客和将其发布到github上时，遇到了一些坑，从一个小白的角度来总结一下。<br> &emsp;在之前的安装中我没有遇到什么问题，等到要同步到github上，使用hexo g -d命令时，出现了Deployer not found: git错误，总结下来有以下几个原因：<br> &emsp;一、最常见的问题，关于_config.yml配置文件参数的书写，我们需要配置的一般来说是 “deploy：” 下面的参数，例如type，repo，branch等，由于_config.yml有严格的书写要求，故有许多该注意的事项：<br> &emsp; &emsp;1、deploy下面的每个子项，例如type等，需要缩进两个字符。<br> &emsp; &emsp;2、hexo3.0以上版本需要将type参数的github改为git。<br> &emsp; &emsp;3、将repository换成repo。<br> &emsp; &emsp;4、冒号后面要留有一个空格（重要）。<br> &emsp;二、若配置文件没有问题，那么就是你的deployer没有安装成功，你需要执行如下命令再安装一次：npm install hexo-deployer-git –save<br> &emsp;三、我在搭建的时候，前两项都没有问题但还是通不过，后来将github的用户名和项目名称的大写字母修改掉就通过了，所以建议大家的库名和用户名最好不要有大写字母。  </p>
+<p> &emsp;剩下的就都很简单啦，搭建成功！下图是搭建好的博客：<br> <img src="1.png" alt=""></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/01/测试/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -589,7 +730,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">Artikel</span>
                   </a>
                 </div>
