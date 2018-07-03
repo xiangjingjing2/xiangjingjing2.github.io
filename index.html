@@ -277,6 +277,146 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/03/margin和padding区别/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/07/03/margin和padding区别/" itemprop="url">
+                  margin和padding的区别
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2018-07-03 23:58:24" itemprop="dateCreated datePublished" datetime="2018-07-03T23:58:24+08:00">2018-07-03</time>
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p> &emsp;margin指的是自身边框到另一个容器边框之间的距离，也就是外边距。padding指的是自身边框和自身内部另一个容器边框之间的距离，也就是内边距。举个实例，如图：<br><img src="3.png" alt=""></p>
+<p> &emsp;搜索框在div中，下面的超链接也在一个div中，为了美观，我们需要让下面的文字下移一点，由于下面的容器和上面的容器并不在一个容器之中，所以符合外边距，可以用margin属性设置 在下面的div中的样式设置为margin-top:4px;设置完之后如图所示：<br><img src="4.png" alt=""></p>
+<p> &emsp;接下来设置选项间间距，由于这些选项都在同一个div中，我用的是<span>标签包裹，所以符合内边距，可以用padding来设置，不过若直接设置padding:0px 20px 0px 20px;的话，由于第一个选项和div容器有20px的间距，选项就不能和搜索栏对齐，影响美观：<br><img src="6.png" alt=""></span></p>
+<p> &emsp;这是我们可以将其整体左移20px，针对整个div操作，故应该使用外边距 margin支持负值（padding不支持负值），可以设置为margin-left：-20px;这样就正好弥补了设置padding:0px 20px 0px 20px;时使其右移的空隙，选项左移，二者对齐：<br><img src="2.png" alt=""></p>
+<p> &emsp;通过简单的实例，证明了padding一般常见于包裹在父元素中的子元素间距的调节（内边距），margin一般常见于两个同级元素之间距离的调节（外边距）。</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/02/sql server2014小记/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -866,7 +1006,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">Artikel</span>
                   </a>
                 </div>
