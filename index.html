@@ -327,6 +327,22 @@
             
 
             
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Updated at: 2018-07-04 19:10:54" itemprop="dateModified" datetime="2018-07-04T19:10:54+08:00">2018-07-04</time>
+              
+            
           </span>
 
           
@@ -359,10 +375,10 @@
       
         
           
-            <p> &emsp;margin指的是自身边框到另一个容器边框之间的距离，也就是外边距。padding指的是自身边框和自身内部另一个容器边框之间的距离，也就是内边距。举个实例，如图：<br><img src="3.png" alt=""></p>
-<p> &emsp;搜索框在div中，下面的超链接也在一个div中，为了美观，我们需要让下面的文字下移一点，由于下面的容器和上面的容器并不在一个容器之中，所以符合外边距，可以用margin属性设置 在下面的div中的样式设置为margin-top:4px;设置完之后如图所示：<br><img src="4.png" alt=""></p>
-<p> &emsp;接下来设置选项间间距，由于这些选项都在同一个div中，我用的是<span>标签包裹，所以符合内边距，可以用padding来设置，不过若直接设置padding:0px 20px 0px 20px;的话，由于第一个选项和div容器有20px的间距，选项就不能和搜索栏对齐，影响美观：<br><img src="6.png" alt=""></span></p>
-<p> &emsp;这是我们可以将其整体左移20px，针对整个div操作，故应该使用外边距 margin支持负值（padding不支持负值），可以设置为margin-left：-20px;这样就正好弥补了设置padding:0px 20px 0px 20px;时使其右移的空隙，选项左移，二者对齐：<br><img src="2.png" alt=""></p>
+            <p> &emsp;margin指的是自身边框到另一个容器边框之间的距离，也就是外边距。padding指的是自身边框和自身内部另一个容器边框之间的距离，也就是内边距。举个实例，如图：<br><img src="/2018/07/03/margin和padding区别/3.png" alt=""></p>
+<p> &emsp;搜索框在div中，下面的超链接也在一个div中，为了美观，我们需要让下面的文字下移一点，由于下面的容器和上面的容器并不在一个容器之中，所以符合外边距，可以用margin属性设置 在下面的div中的样式设置为margin-top:4px;设置完之后如图所示：<br><img src="/2018/07/03/margin和padding区别/4.png" alt=""></p>
+<p> &emsp;接下来设置选项间间距，由于这些选项都在同一个div中，我用的是<span>标签包裹，所以符合内边距，可以用padding来设置，不过若直接设置padding:0px 20px 0px 20px;的话，由于第一个选项和div容器有20px的间距，选项就不能和搜索栏对齐，影响美观：<br><img src="/2018/07/03/margin和padding区别/6.png" alt=""></span></p>
+<p> &emsp;这是我们可以将其整体左移20px，针对整个div操作，故应该使用外边距 margin支持负值（padding不支持负值），可以设置为margin-left：-20px;这样就正好弥补了设置padding:0px 20px 0px 20px;时使其右移的空隙，选项左移，二者对齐：<br><img src="/2018/07/03/margin和padding区别/2.png" alt=""></p>
 <p> &emsp;通过简单的实例，证明了padding一般常见于包裹在父元素中的子元素间距的调节（内边距），margin一般常见于两个同级元素之间距离的调节（外边距）。</p>
 
           
@@ -599,12 +615,24 @@
                 
               
 
-              <time title="Post created: 2018-07-01 23:15:21 / Updated at: 23:24:57" itemprop="dateCreated datePublished" datetime="2018-07-01T23:15:21+08:00">2018-07-01</time>
+              <time title="Post created: 2018-07-01 23:15:21" itemprop="dateCreated datePublished" datetime="2018-07-01T23:15:21+08:00">2018-07-01</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Updated at: 2018-07-04 19:09:33" itemprop="dateModified" datetime="2018-07-04T19:09:33+08:00">2018-07-04</time>
               
             
           </span>
@@ -640,7 +668,7 @@
         
           
             <p> &emsp;闲来无事，忽然想搭个博客，使用hexo搭建博客和将其发布到github上时，遇到了一些坑，从一个小白的角度来总结一下。<br> &emsp;在之前的安装中我没有遇到什么问题，等到要同步到github上，使用hexo g -d命令时，出现了Deployer not found: git错误，总结下来有以下几个原因：<br> &emsp;一、最常见的问题，关于_config.yml配置文件参数的书写，我们需要配置的一般来说是 “deploy：” 下面的参数，例如type，repo，branch等，由于_config.yml有严格的书写要求，故有许多该注意的事项：<br> &emsp; &emsp;1、deploy下面的每个子项，例如type等，需要缩进两个字符。<br> &emsp; &emsp;2、hexo3.0以上版本需要将type参数的github改为git。<br> &emsp; &emsp;3、将repository换成repo。<br> &emsp; &emsp;4、冒号后面要留有一个空格（重要）。<br> &emsp;二、若配置文件没有问题，那么就是你的deployer没有安装成功，你需要执行如下命令再安装一次：npm install hexo-deployer-git –save<br> &emsp;三、我在搭建的时候，前两项都没有问题但还是通不过，后来将github的用户名和项目名称的大写字母修改掉就通过了，所以建议大家的库名和用户名最好不要有大写字母。  </p>
-<p> &emsp;剩下的就都很简单啦，搭建成功！下图是搭建好的博客：<br> <img src="1.png" alt=""></p>
+<p> &emsp;剩下的就都很简单啦，搭建成功！下图是搭建好的博客：<br> <img src="/2018/07/01/搭建博客遇到的问题/1.png" alt=""></p>
 
           
         
