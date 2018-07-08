@@ -277,6 +277,142 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/08/CSS练习/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/07/08/CSS练习/" itemprop="url">
+                  CSS综合小练习
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2018-07-08 23:17:15" itemprop="dateCreated datePublished" datetime="2018-07-08T23:17:15+08:00">2018-07-08</time>
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>今天做了一个小练习，实现如下效果<br><img src="/2018/07/08/CSS练习/1.png" alt=""><br> &emsp; HTML方面，我将其分为四个大的部分：顶部的最新动态部分，左边的头像和点赞部分，右侧文章部分，和下面的关注问题部分，分别用四个DIV包裹。CSS方面，根据图示，整体先设置一个固定宽度body{width：600px}，顶部部分：<br>{<br>    border-bottom: 1px solid lightgray;<br>    margin-bottom: 12px;<br>    padding-bottom: 12px;<br>}<br> &emsp; 灰色横线是通过设置边框底部来实现的，整个顶部部分和下面有12px的外边距，在其内部的图片和最新动态和边框也有12px的内边距。顶部右侧的设置和图片设置为右浮动。<br> &emsp; 左侧部分，将该div设置为左浮动和相对定位（为了调节右侧距离），下面的点赞数图片，里面的数字内边距为{padding: 5px;}<br> &emsp; 右侧部分，我首先将其整体设置为绝对定位<br>{<br>    position: absolute;<br>    left: 70px;<br>}这样能使右侧不占用左侧的空间而整体的与左侧有外边距。右侧细分的话，我将其分为上面的banner部分，图片部分和文章（article）部分，banner部分设置其{margin-bottom：5px；}，右侧的X图片设置为右浮动，它浮动到右侧的宽度等于文章的宽度。图片部分，将图片设置为左浮动即可。文章方面，将其也设置为左浮动，其他属性{<br>    line-height: 170%;<br>    margin-left: 15px;<br>    width: 367px;<br>}<br> &emsp;下面的关注问题部分，有一个需要注意的问题。若不清除浮动，该部分将会环绕图片，在文章的后面。所以我们要先清除浮动，再设置属性，由于是左浮动，可以使用{clear：left；}，bottom部分<br>{<br>    padding: 20px 0px 20px;<br>    border-bottom: 1px solid lightgray;<br>}<br> &emsp;在对超链接进行设置<br>a{<br>    text-decoration: none;<br>    color: #336699;<br>}<br>图片的效果就基本完成了。</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/05/一些html dom操作/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1170,7 +1306,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-count">7</span>
                     <span class="site-state-item-name">Artikel</span>
                   </a>
                 </div>
